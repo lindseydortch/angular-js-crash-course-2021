@@ -150,6 +150,11 @@
 
 (server-setup BRANCH ENDS HERE)
 (angular-router BRANCH STARTS HERE)
-## Angular Router 
+## Angular Router
+- You can set this up when you set up the app 
+- You use the <router-outlet> to give your component a path 
+- href refreshes the page, you use routerLink instead
 
 ## Limit Component To Route 
+- We don't want to show the add task button on the about page 
+- You can use router to compare and show the button only on the / route 
