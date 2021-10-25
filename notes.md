@@ -108,23 +108,45 @@
 
 (angular-overview BRANCH ENDS HERE)
 (server-setup BRANCH STARTS HERE)
-## JSON-Server Setup 
+## JSON-Server Setup
+- We will be using the HttpClient to return data
+- The HttpClient returns an Observable automatically 
+- You won't have to use of 
+- For the backend we are using JSON Server 
+  - Not made for production, can only be used locally 
 
 ## Angular HTTP Client 
+- HttpClient is included with Angular 
+- In order to use the HttpClient, you have to add it as a module 
 
 ## Fetching Tasks 
+- this.http<Task[]>(this.apiUrl)
 
 ## Deleting Tasks 
+- You can add this in the task component 
+- In order to delete the task you need to get the ID
+- Think of the subscribe as a .then()  
 
 ## Toggle Reminder 
+- Just like we have [ngStyle], we also have access to [ngClass]
 
 ## Add Task Component 
+- When working with forms you want to add define them above your constructor 
 
 ## Forms Module & ngModel 
+- ngModel is part of the formsModule and is not setup by default 
+- brackets are for input
+- () are used for events and output
+- For ngModel we use both [()] - it's a two-way binding 
 
 ## Submit & Create Task 
+- There's an ngSubmit that we can use on the form 
+- $event in your function lets you call a new task 
 
 ## Toggle Button & UI Service 
+- Instead of passing things around (prop drilling) we're going to create a service and set up a subject 
+- You bring in Observable and Subject 
+- We can use an *ngIf to tell your HTML whether or not you want it to show 
 
 (server-setup BRANCH ENDS HERE)
 (angular-router BRANCH STARTS HERE)
